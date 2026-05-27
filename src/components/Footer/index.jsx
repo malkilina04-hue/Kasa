@@ -2,7 +2,7 @@ import './index.scss'
 function Footer() {
     return (
         <footer>
-            <p>© 2024 Kasa All Rights Reserved</p>
+            <p>© 2020 Kasa All Rights Reserved</p>
         </footer>
     )
 }
