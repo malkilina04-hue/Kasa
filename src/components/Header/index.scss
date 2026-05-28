@@ -1,4 +1,24 @@
 header {
-    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+
+    img {
+        width: 150px;
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+    }
+}
+a.active {
+    text-decoration: underline;
 }

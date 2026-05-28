@@ -4,6 +4,7 @@ import Logement from './pages/Logement'
 import Error from './pages/Error'
 import Header from './components/Header/index.jsx'
 import Footer from './components/Footer/index.jsx'
+import APropos from './pages/APropos'
 
 function AppRouter() {
     return (
@@ -13,6 +14,7 @@ function AppRouter() {
                 <Route path="/" element={<Home />} />
                 <Route path="/logement/:id" element={<Logement />} />
                 <Route path="*" element={<Error />} />
+                <Route path="/apropos" element={<APropos />} />
             </Routes>
             <Footer />
         </Router>
