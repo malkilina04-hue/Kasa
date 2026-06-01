@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Slideshow from '../components/Slideshow'
 import logements from '../data/logement.json'
 import Collapse from '../components/Collapse'
@@ -8,6 +8,11 @@ import Stars from '../components/Stars'
 function Logement() {
     const { id } = useParams()
     const logement = logements.find((l) => l.id === id)
+
+    // si l'id n'existe pas, on redirige vers la page 404 //
+if (!logement) {
+    return <Navigate to="/404" />
+}
 
     return (
     <div className="logement">
