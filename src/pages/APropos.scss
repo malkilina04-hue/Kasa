@@ -1,0 +1,23 @@
+.apropos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+
+    .banner {
+        padding: 100px 20px;
+
+        &::before {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .collapse {
+        margin-bottom: 20px;
+        margin: 0 100px;
+    }
+
+    .collapse-content {
+        text-align: left;
+    }
+}

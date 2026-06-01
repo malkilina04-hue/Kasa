@@ -3,6 +3,7 @@ import Slideshow from '../components/Slideshow'
 import logements from '../data/logement.json'
 import Collapse from '../components/Collapse'
 import './Logement.scss'
+import Stars from '../components/Stars'
 
 function Logement() {
     const { id } = useParams()
@@ -26,11 +27,7 @@ function Logement() {
                     <p>{logement.host.name}</p>
                     <img src={logement.host.picture} alt={logement.host.name} />
                 </div>
-                <div className="rating">
-                    {[1, 2, 3, 4, 5].map((etoile) => (
-                        <i key={etoile} className={etoile <= logement.rating ? 'fa-solid fa-star active' : 'fa-solid fa-star'}></i>
-                    ))}
-                </div>
+                <Stars rating={logement.rating} />
             </div>
         </div>
         <div className="collapses">

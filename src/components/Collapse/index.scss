@@ -1,8 +1,9 @@
 .collapse {
     margin: 10px 0;
+    width: 85%;
 
     .collapse-header {
-        width: 100%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -12,7 +13,17 @@
         border-radius: 5px;
         padding: 10px 20px;
         cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+
+        button {
+        background: none;
+        border: none;
+        color: white;
         font-size: 18px;
+        cursor: pointer;
+    }
+    
     }
 
     .arrow {
@@ -27,5 +38,6 @@
         background-color: #f6f6f6;
         padding: 20px;
         border-radius: 0 0 5px 5px;
+        width: 90%;
     }
 }   

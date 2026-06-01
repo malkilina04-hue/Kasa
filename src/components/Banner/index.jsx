@@ -1,10 +1,9 @@
 import './index.scss'
-import accueil from '../../assets/Accueil.png'
 
-function Banner() {
+function Banner( {image, titre } ) {
     return (
-        <div className="banner" style={{backgroundImage: `url(${accueil})`}}>
-            <p>Chez vous, partout et ailleurs</p>
+        <div className="banner" style={{backgroundImage: `url(${image})`}}>
+            {titre && <p>{titre}</p>}
         </div>
     )
 }
