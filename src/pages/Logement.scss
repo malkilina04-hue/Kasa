@@ -35,15 +35,13 @@
 
 .collapses {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin: 20px 0;
+
+    .collapse {
+        flex: 1;
+    }
 }
-
-.collapses > div {
-    flex: 1;
-}
-
-
 
 .tags {
     display: flex;
