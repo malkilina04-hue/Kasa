@@ -28,3 +28,10 @@
         z-index: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .banner p {
+            font-size: 16px;
+            text-align: left;
+        }
+    }

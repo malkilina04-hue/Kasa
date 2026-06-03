@@ -21,3 +21,17 @@
         text-align: left;
     }
 }
+
+@media (max-width: 768px) {
+    .apropos {
+        .collapse {
+            margin: 0;
+        }
+        .banner {
+            margin: 0;
+            padding: 70px 20px;
+    }
+    
+}
+}
+

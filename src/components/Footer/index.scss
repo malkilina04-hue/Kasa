@@ -13,3 +13,16 @@ footer {
         margin-right: auto;
     }
 }
+
+@media (max-width: 768px) {
+    footer {
+        img {
+            width: 150px;
+        }
+
+        p {
+            max-width: 120px;
+            margin: 0 auto;
+        }
+    }
+}

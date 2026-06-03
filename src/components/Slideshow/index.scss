@@ -18,7 +18,7 @@
     background: none;
     border: none;
     color: white;
-    font-size: 60px;
+    font-size: 80px;
     cursor: pointer;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
@@ -38,5 +38,15 @@
         transform: translateX(-50%);
         color: white;
         font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .slideshow {
+        height: 255px;
+        border-radius: 10px;
+        
+        .fleche {
+            font-size: 30px;
+        }
     }
 }

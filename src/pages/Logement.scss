@@ -90,3 +90,45 @@
         object-fit: cover;
     }
 }
+
+@media (max-width: 768px) {
+    .collapses {
+        flex-direction: column;
+    }
+
+    .logement-droite {
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logement {
+        padding: 10px;
+    }
+
+    .collapses {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logement-info {
+        flex-direction: column;
+    }
+
+    .logement-droite {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-direction:row-reverse;
+    }
+
+    .logement-gauche {
+        padding-right: 10px;
+        font-size: 45px;
+
+    }
+}

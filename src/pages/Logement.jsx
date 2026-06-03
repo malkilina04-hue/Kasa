@@ -9,7 +9,7 @@ function Logement() {
     const { id } = useParams()
     const logement = logements.find((l) => l.id === id)
 
-    // si l'id n'existe pas, on redirige vers la page 404 //
+    // si l'id n'existe pas, on redirige vers la page 404//
 if (!logement) {
     return <Navigate to="/404" />
 }
@@ -17,6 +17,7 @@ if (!logement) {
     return (
     <div className="logement">
         <Slideshow images={logement.pictures} />
+
         <div className="logement-info">
             <div className="logement-gauche">
                 <h1>{logement.title}</h1>
@@ -35,6 +36,7 @@ if (!logement) {
                 <Stars rating={logement.rating} />
             </div>
         </div>
+        
         <div className="collapses">
             <Collapse titre="Description" contenu={logement.description} />
             <Collapse titre="Équipements" contenu={logement.equipments.join(', ')} />
@@ -44,3 +46,5 @@ if (!logement) {
 }
 
 export default Logement
+
+

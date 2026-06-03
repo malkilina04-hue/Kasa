@@ -37,3 +37,9 @@
         border-radius: 0 0 5px 5px;
     }
 }
+
+@media (max-width: 768px) {
+.collapse-header {
+    font-size: 15px;
+}
+}
