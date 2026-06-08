@@ -7,7 +7,7 @@ import Stars from '../components/Stars'
 
 function Logement() {
     const { id } = useParams()
-    const logement = logements.find((l) => l.id === id)
+    const logement = logements.find((logement) => logement.id === id)
 
     // si l'id n'existe pas, on redirige vers la page 404//
 if (!logement) {
