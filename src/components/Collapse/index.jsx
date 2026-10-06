@@ -9,14 +9,12 @@ function Collapse({ titre, contenu }) {
             <div className="collapse-header" >
                 <span>{titre}</span>
                 <button onClick={() => setIsOpen(!isOpen)}>
-                <i className={isOpen ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-up'}></i>
+                <i className={isOpen ? 'arrow open fa-solid fa-chevron-up' : 'arrow fa-solid fa-chevron-up'}></i>
             </button>
             </div>
-            {isOpen && (
-                <div className="collapse-content">
+                <div className={isOpen ? 'collapse-content open' : 'collapse-content'}>
                     <p>{contenu}</p>
                 </div>
-            )}
         </div>
     )
 }
